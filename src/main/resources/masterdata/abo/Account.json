@@ -1,0 +1,18 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+    {
+		"url" : {
+			"objectName" : "Account",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_ACC_1"
+		},
+		"body" : {
+			"Name":"Auto_Account",
+			"CurrencyIsoCode":"USD",
+			"Apttus_Config2__BillingDayOfMonth__c":"1st of the Month",
+			"Apttus_Config2__TaxExempt__c":"No",
+			"Apttus_Billing__ExcludeFromDunning__c":"false"
+		}
+    }
+    ]
+}

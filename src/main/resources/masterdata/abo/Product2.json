@@ -1,0 +1,330 @@
+{
+    "allOrNone" : true,
+    "compositeRequest" : [
+    {
+     	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_1"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_BD01",
+			"ProductCode":"Auto_Pricing_ExtendedQty_BD01",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Bundle",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"true",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+		}
+    },
+	{
+    	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_2"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_BD01_OP01",
+			"ProductCode":"Auto_Pricing_ExtendedQty_BD01_OP01",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_3"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_BD01_SubBD_01",
+			"ProductCode":"Auto_Pricing_ExtendedQty_BD01_SubBD_01",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Bundle",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"true",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_4"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_BD01_SubBD_01_OP01",
+			"ProductCode":"Auto_Pricing_ExtendedQty_BD01_SubBD_01_OP01",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" : {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_5"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_BD01_SubBD_01_OP02",
+			"ProductCode":"Auto_Pricing_ExtendedQty_BD01_SubBD_01_OP02",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_6"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Bundle",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"true",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+		
+			
+ 		}
+    },
+    {
+    	"url" : {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_7"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02_OP02",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02_OP02",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_8"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Bundle",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"true",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_9"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03_OP01",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03_OP01",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+    	"url" : {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_10"
+		},
+    	"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03_OP02",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03_OP02",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+		"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_11"
+		},
+		"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02_OP03",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02_OP03",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+		"url" :  {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_12"
+		},
+		"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03_OP03",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD03_OP03",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    },
+    {
+		"url" : {
+			"objectName" : "Product2",
+			"APTS_EXT_ID__c" : "MD_APTS_EXT_PROD_13"
+		},
+		"body" : {
+			"Name":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02_OP01",
+			"ProductCode":"Auto_Pricing_ExtendedQty_SubBD01_SubBD02_OP01",
+			"IsActive":"true",
+			
+			"Apttus_Config2__ConfigurationType__c":"Option",
+			"Apttus_Config2__Customizable__c":"false",
+			"Apttus_Config2__HasAttributes__c":"false",
+			"Apttus_Config2__HasDefaults__c":"false",
+			"Apttus_Config2__HasOptions__c":"false",
+			"Apttus_Config2__HasSearchAttributes__c":"false",
+			"Apttus_Config2__Uom__c":"Each",
+			"Apttus_Config2__ExcludeFromSitemap__c":"false",
+			"Apttus_Config2__Version__c":"1.0",
+			
+			"Apttus_Config2__ShowTabView__c":"false"
+			
+			
+ 		}
+    }
+	]
+}
