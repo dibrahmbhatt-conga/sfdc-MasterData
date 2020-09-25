@@ -61,7 +61,7 @@ public class URLGenerator {
 	public String associateProductWithCategoryURL = "/sobjects/Apttus_Config2__ProductClassification__c/";
 	public String multiUpsertData = "/composite/";
 	public String apexLogURL = "/sobjects/ApexLog/";
-    public String devConsoleURL = "/tooling/executeAnonymous/?anonymousBody=";
+    public String developerConcoleURL = "/tooling/executeAnonymous/?anonymousBody=";
 
 	public String REST_ENDPOINT = "/services/data";
 	public String API_VERSION = "/v45.0";
@@ -124,6 +124,6 @@ public class URLGenerator {
 		this.associateProductWithCategoryURL =  baseURL + this.associateProductWithCategoryURL;
 		this.multiUpsertData = baseURL + this.multiUpsertData;
 		this.apexLogURL = baseURL + this.apexLogURL;
-		this.devConsoleURL = baseURL + this.devConsoleURL;
+		this.developerConcoleURL = baseURL + this.developerConcoleURL;
 	}
 }

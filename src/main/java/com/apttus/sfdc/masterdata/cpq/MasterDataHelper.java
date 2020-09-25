@@ -1,4 +1,4 @@
-package com.apttus.sfdc.masterDataCpq;
+package com.apttus.sfdc.masterdata.cpq;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +17,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.jayway.restassured.path.json.JsonPath;
 import com.jayway.restassured.response.Response;
 
 public class MasterDataHelper {
@@ -126,8 +127,69 @@ public class MasterDataHelper {
 	 * @param payload takes files payload as api request body
 	 * @throws ApplicationException
 	 */
-	public void multiUpsertData(boolean fileStatus,String payload) throws ApplicationException {
-		if(fileStatus)
-				sfdcRestUtils.postWithoutAppUrl(this.urlGenerator.multiUpsertData,payload);
+	public void multiUpsertData(boolean fileStatus,String payload, String objectName) throws ApplicationException {
+		if(fileStatus) {
+				Response response = sfdcRestUtils.postWithoutAppUrl(this.urlGenerator.multiUpsertData,payload);
+				System.out.println(response.getBody().asString());
+				System.out.println(objectName+" upsert operation done successfully");
+		}
 	}
+	
+	/**
+	 * 
+	 * @param requestBody pass request body for console
+	 * @return api response
+	 */
+	public Response developerConsole(String requestBody) {
+		return sfdcRestUtils.getData(urlGenerator.developerConcoleURL+requestBody);
+	}
+	
+	/** 
+	 * 
+	 * @param requestBody pass request body for console
+	 * @param fetchField pass the key which is passed in system.debug
+	 * @return the value which is printed with fetchField key
+	 * @throws ApplicationException
+	 */
+	public String developerConsoleWithResponse(String requestBody,String fetchField) throws ApplicationException {
+		Response apexLogBodyResponse=null;
+		for(int i=0;i<3;i++) {
+			Response devloperReqResponse = sfdcRestUtils.getData(urlGenerator.developerConcoleURL+requestBody);
+			if(devloperReqResponse.getStatusCode()!=200) throw new ApplicationException(devloperReqResponse.getBody().asString());
+			String apexQuery="select id from ApexLog where Request = 'API' AND Operation like '%executeAnonymous%' ORDER By StartTime DESC";
+			Response apexLogresponse = this.sfdcRestUtils.getWithQueryParams(this.urlGenerator.queryURL, apexQuery);
+
+			if(apexLogresponse.getStatusCode()!=200) throw new ApplicationException(apexLogresponse.getBody().asString());
+			JsonPath path = new JsonPath(apexLogresponse.getBody().asString());
+			String apexLogId = path.getString("records[0].Id");
+			apexLogBodyResponse = sfdcRestUtils.getData(this.urlGenerator.commonSFDCURL+"ApexLog/"+apexLogId+"/Body");
+			if(apexLogBodyResponse.getStatusCode()!=200) throw new ApplicationException(apexLogBodyResponse.getBody().asString());
+			if(apexLogBodyResponse.getBody().asString().contains(fetchField)) break;
+		}
+		return apexLogBodyResponse.getBody().asString().split("EXECUTION_STARTED")[1]
+				.split(fetchField)[1]
+				.split("\n")[0];
+	}
+	
+	/**
+	 * 
+	 * @param query Provide full query to execute
+	 * @return api Response
+	 * @throws Exception
+	 */
+	public Response searchWithQuery(String query) throws Exception {
+		try {
+			Response response = this.sfdcRestUtils.getWithQueryParams(this.urlGenerator.queryURL, query);
+			if (response.getStatusCode() != 200) {
+				throw new ApplicationException(
+						"Failure while searcging for with query using the API :"
+								+ this.urlGenerator.queryURL + ". The response code was:" + response.getStatusCode()
+								+ "and the response body received is: " + response.getBody().asString());
+			}
+			return response;
+		} catch (Exception e) {
+			throw new ApplicationException(e.getMessage());
+		}
+	}
+
 }
